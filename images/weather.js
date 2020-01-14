@@ -20,8 +20,8 @@ function askForCoords(){//navigator가 API이다. 그 안의 내용을 사용할
     navigator.geolocation.getCurrentPosition(handleGeoSucces,handleGeoError)
 }
 function loadCoords(){
-    const loadCoords=localStorage.getItem(COORDS);
-    if(loadCoords===null){
+    const loadedCoords=localStorage.getItem(COORDS);
+    if(loadedCoords===null){
         askForCoords();
     }else{
         //getWeather
