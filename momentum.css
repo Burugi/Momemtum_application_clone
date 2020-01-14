@@ -1,15 +1,8 @@
-body{
-    background-color: peru;
-}
-h1{
-    color: #22a6b3;
-    transition: color 0.5s ease-in-out;
-}
 
-
+.form,
 .greetings{
     display:none;
 }
 .showing{
-    display: none;
+    display: block;
 }
